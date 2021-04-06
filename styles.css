@@ -16,17 +16,34 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px rgba(255,255,255,0.8);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
 }
 #nav {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    text-decoration: underline;
     padding: 0;
+    background-color: #F3C300;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
 }
 
 #nav li {
+    margin: 1rem;
     padding: 1rem;
+    background-color: #333333;
+    color: white;
+    border-radius: 30px;
 }
 
 #mission {
@@ -47,4 +64,76 @@ h1 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
     color: rgb(255, 254, 254);
     backdrop-filter: blur(6px);
+}
+
+#portfolio {
+    background-color: #062b7d;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#portfolio article img {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+#portfolio article{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    margin-top: 1rem;
+    padding: .5rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(30px);
+}
+
+#team {
+    background-image: url("./images/pslogo.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    opacity: 0.7;
+    
+}
+
+#team article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#person img {
+    width: 200px;
+    height: 200px;
+}
+
+#contact {
+    background-color: #062b7d;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
 }
